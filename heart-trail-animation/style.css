@@ -24,6 +24,8 @@ span {
   animation: animate 6s linear;
 }
 
+/* https://www.iconfinder.com/icons/285639/heart_icon */
+
 /* vytvoření animace */
 
 @keyframes animate {
