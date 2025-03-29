@@ -14,8 +14,29 @@ span {
   width: 100px;
   height: 100px;
   position: absolute;
+  pointer-events: none;
+  /* Prvek nebude reagovat na kliknutí, hover, drag & drop ani jiné události myši.
+ */
   background-size: cover;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  animation: animate 6s linear;
+}
+
+/* vytvoření animace */
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+    /* zajistí barevnost srdíček */
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+    /* zajistí barevnost srdíček */
+  }
 }
