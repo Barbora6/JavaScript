@@ -1,6 +1,5 @@
 function calculateLoan() {
   let vyseUveruHodnota = Number(document.getElementById("loan-amount").value);
-  console.log(vyseUveruHodnota);
 
   let urokovaSazbaHodnota = Number(
     document.getElementById("interest-rate").value
@@ -20,11 +19,5 @@ function calculateLoan() {
 }
 
 document
-  .getElementById("loan-amount")
-  .addEventListener("change", calculateLoan);
-document
-  .getElementById("interest-rate")
-  .addEventListener("change", calculateLoan);
-document
-  .getElementById("years-to-pay")
-  .addEventListener("change", calculateLoan);
+  .querySelectorAll("#loan-amount, #interest-rate, #years-to-pay")
+  .forEach((input) => input.addEventListener("change", calculateLoan));
