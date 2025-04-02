@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,43 @@
     <title>Loan calculator - úvěrová kalkulačka</title>
   </head>
   <body>
+    <div>
+      <h1>Úvěrová kalkulačka</h1>
+      <p>
+        Částka úvěru CZ:
+        <input
+          type="number"
+          id="loan-amount"
+          min="1000000"
+          max="100000000"
+          value="0"
+          step="100000"
+        />
+      </p>
+      <p>
+        Úroková sazba %:
+        <input
+          type="number"
+          id="interest-rate"
+          min="3.5"
+          max="10"
+          value="0"
+          step=".1"
+        />
+      </p>
+      <p>
+        Doba sprácení:
+        <input
+          type="number"
+          id="months-to-pay"
+          min="6"
+          max="72"
+          value="12"
+          step="1"
+        />
+      </p>
+      <p>Měsíční splátka:</p>
+    </div>
     <script type="module" src="Index.js"></script>
   </body>
 </html>
