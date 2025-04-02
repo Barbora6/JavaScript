@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 234);
+  font-family: "Kanit", sans-serif;
+  line-height: 55px;
+}
+
+.container {
+  background-color: darkcyan;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 8px;
+  width: 450px;
+  height: 550px;
+  padding-left: 75px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 80%;
+  font-size: 20px;
+  height: 30px;
+}
+
+p {
+  font-size: 24px;
+}
