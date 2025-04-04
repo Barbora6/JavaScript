@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>BMI calculator</title>
   </head>
   <body>
+    <div class="container">
+      <h1 class="heading">Body Mass Index (BMI) calculator</h1>
+      Vaše výška (cm):
+      <input
+        type="number"
+        class="input"
+        id="height"
+        value="180"
+        placeholder="Zadejte svoji výšku v cm:"
+      />
+      Vaše hmotnost (kg)
+      <input
+        type="number"
+        class="input"
+        id="weight"
+        value="180"
+        placeholder="Zadejte svoji váhu v kg:"
+      />
+      <button class="btn" id="btn">Compute BMI</button>
+      <input disabled type="text" class="input" id="bmi-result" />
+      <h4 class="info-text">
+        Weight Condition: <span id="weight-condition"></span>
+      </h4>
+    </div>
     <script type="module" src="Index.js"></script>
   </body>
 </html>
