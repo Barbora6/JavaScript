@@ -1,3 +1,5 @@
+// API from https://emoji-api.com/
+
 const btnEl = document.getElementById("btn");
 const emojiNameEl = document.getElementById("emoji-name");
 
