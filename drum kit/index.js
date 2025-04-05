@@ -8,4 +8,7 @@ kits.forEach((kit) => {
   btnEl.innerText = kit;
   btnEl.style.backgroundImage = "url(images/" + kit + ".png)";
   containerEl.appendChild(btnEl);
+
+  // vytvoření audio
+  const audioEl = document.createElement("audio");
 });
