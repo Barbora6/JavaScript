@@ -11,4 +11,6 @@ kits.forEach((kit) => {
 
   // vytvoření audio
   const audioEl = document.createElement("audio");
+  audioEl.src = "sounds/" + kit + ".mp3";
+  containerEl.appendChild(audioEl);
 });
