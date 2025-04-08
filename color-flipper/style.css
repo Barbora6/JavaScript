@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container-heading {
+  font-size: 48px;
+  margin: 180px 820px;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 350px;
+  left: 450px;
+}
+
+button {
+  margin: 20px;
+  border: none;
+  width: 260px;
+  height: 80px;
+  border-radius: 8px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#random {
+  background-color: gray;
+}
