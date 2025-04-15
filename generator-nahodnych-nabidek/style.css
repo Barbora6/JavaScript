@@ -8,7 +8,7 @@ body {
   height: 80vh;
   width: 550px;
   margin: 0 auto;
-  background-color: blue;
+  background-color: rgb(97, 242, 53);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -21,22 +21,22 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 240px;
-  background-color: aqua;
-  border: 2px solid red;
+  background-color: rgb(197, 134, 32);
+  border: 2px solid rgb(89, 73, 73);
 }
 
 h1 {
   font-size: 48px;
-  color: blue;
+  color: rgb(222, 244, 58);
   letter-spacing: 2px;
 }
 
 #btn {
   border: none;
   border-radius: 8px;
-  width: 205px;
+  width: 250px;
   height: 50px;
-  background-color: blue;
+  background-color: rgb(97, 242, 53);
   color: white;
   letter-spacing: 3px;
   font-size: 24px;
@@ -44,11 +44,12 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#input {
+#quote {
   margin-top: 40px;
   width: 450px;
   height: 40px;
   border: none;
   border-radius: 8px;
   text-align: center;
+  font-size: 24px;
 }
