@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+section#colour-display h1 {
+  color: grey;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+section#colour-display {
+  width: 30%;
+  margin: 100px auto;
+  background-color: whitesmoke;
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section#colour-display #new-colour-button {
+  border: none;
+  border-radius: 8px;
+  width: 50%;
+  padding: 16px;
+  color: white;
+  background-color: palevioletred;
+  letter-spacing: 4px;
+  margin: 50px;
+  cursor: pointer;
+}
+
+section#colour-display #new-colour-button:hover {
+  background-color: grey;
+}
