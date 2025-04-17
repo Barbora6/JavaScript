@@ -25,6 +25,7 @@ const hexValues = [
 
 const getRandomHexValue = () => {
   const randomIndexPosition = Math.floor(Math.random() * hexValues.length);
+  // length je vlastnost (property), která říká, jak dlouhý je nějaký objekt – obvykle pole (array) nebo řetězec (string).
 
   const randomHexValue = hexValues[randomIndexPosition];
 
