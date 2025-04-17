@@ -1,3 +1,6 @@
+// https://www.youtube.com/watch?v=NfvtQ2p5QG4
+// projekt 23 BMI
+
 const btnEl = document.getElementById("btn");
 const bmiInputEl = document.getElementById("bmi-result");
 const weightConditionEl = document.getElementById("weight-condition");
@@ -5,6 +8,18 @@ const weightConditionEl = document.getElementById("weight-condition");
 function calculateBMI() {
   const heightValue = document.getElementById("height").value / 100;
   const weightValue = document.getElementById("weight").value;
+
+  // validace vstupu
+  if (
+    heightValue <= 0 ||
+    weightValue <= 0 ||
+    isNaN(heightValue) ||
+    isNaN(weightValue)
+  ) {
+    bmiInputEl.value = "";
+    weightConditionEl.innerText = "! Zadej platné číslo pro výšku i váhu!";
+    return;
+  }
 
   const bmiValue = Math.floor(weightValue / (heightValue * heightValue));
 

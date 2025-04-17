@@ -7,11 +7,6 @@ btnLength.addEventListener("click", () => {
   textResult.innerHTML = `${text}, délka textu je: ${text.length} znaků.`;
 });
 
-// btnLength.addEventListener("input", () => {
-//   const text1 = textInput.value;
-//   textResult.innerHTML = `${text1}, délka textu je: ${text1.length} znaků.`;
-// });
-
 // --------------------------------------------------------
 
 const inputFruit = document.getElementById("inputFruit");
@@ -32,6 +27,8 @@ btnFruit.addEventListener("click", () => {
   fruits.push("🍎");
   inputFruit.value = "";
   inputFruit.focus();
+  // metoda, která přesune kurzor do inputu, aktivuje ho jako bys na něj klikla
+  // můžeš hned začít psát a nemusíš klikat myší
 
   arrayResults.innerHTML = `Ovoce na seznamu: ${fruit} ${fruits.join(
     ","

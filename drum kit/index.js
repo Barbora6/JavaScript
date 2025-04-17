@@ -1,3 +1,6 @@
+// https://www.youtube.com/watch?v=NfvtQ2p5QG4
+// projekt 20.
+
 const kits = ["crash", "kick", "snare", "tom"];
 
 const containerEl = document.querySelector(".container");
